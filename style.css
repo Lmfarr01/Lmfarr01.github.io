@@ -192,12 +192,25 @@
   width: 46vw;
 }
 
+.flower2 img {
+  position: absolute;
+  top: 175vh;
+  height: 45vh;
+}
+
+.flower3 img {
+  position: absolute;
+  top: 275vh;
+  margin-left: 80vw;
+  height: 40vh;
+}
+
 .intro {
   position: absolute;
   top: 25vh;
   width: 100%;
   font-style: italic;
-  font-size: 11vw;
+  font-size: 10vw;
   font-weight: 400;
   color: #32174D;
   font-family: 'Droid Serif', serif;
@@ -219,7 +232,7 @@
 .intro a {
   position: relative;
   width: 100%;
-  bottom: 10vh;
+  bottom: 9vh;
   border: solid .2vh;
   padding-left: 14px;
   padding-right: 14px;
@@ -501,6 +514,87 @@
 
 .registry-p-1 a:link {
   text-decoration:none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  border: solid 1vh;
+  padding: 20px;
+  color: #32174D;
+  background: #fff;
+  width: 30%;
+  position: relative;
+  top: 25vh;
+  transition: all 5s ease-in-out;
+}
+
+.content {
+  font-size: 2.5vh;
+  line-height: 170%;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+.content a {
+  position: relative;
+  bottom: 1vh;
+  right: .5vw;
+  border: solid .2vh;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  transition: all 200ms;
+  font-weight: 400;
+  color: #32174D;
+  font-size: 1.7vh;
+  font-family: 'Numans', sans-serif;
+  text-align: center;
+}
+
+.content a:link {
+  text-decoration:none;
+}
+
+.content a:hover {
+  color: #D3AF35;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #32174D;
+}
+
+.popup .close:hover {
+  color: #D3AF35;
+}
+
+.popup .content {
+  max-height: 40%;
+  overflow: auto;
 }
 
 .registry-p-2 {
