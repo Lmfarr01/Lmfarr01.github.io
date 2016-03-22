@@ -719,16 +719,21 @@
 }
 
 .soon a:link {
-  text-decoration:none;
+  text-decoration: none;
 }
 
-.soon img {
-	width: 101px;
-	height: 175px;
-	background: url('http://payload308.cargocollective.com/1/6/208850/8471571/Bonnie-Ani-2-04.png') bottom;
-	text-indent: -99999px;
+.image-swap {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 4vh;
+   width: 100px;
+   height: 175px;
+   background-image: url(http://payload308.cargocollective.com/1/6/208850/8471571/Bonnie-04.png);
+   background-position: 0 0;
+}
+ 
+.image-swap:hover {
+background-position: 0 100%;
 }
 
-.soon img:hover {
-	background-position: 0 0;
-}
