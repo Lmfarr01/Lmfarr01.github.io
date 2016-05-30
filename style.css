@@ -29,7 +29,7 @@
 }
 
 .nav a:link {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .nav2 {
@@ -46,7 +46,7 @@
 }
 
 .nav2 a:link {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .nav3 {
@@ -63,7 +63,7 @@
 }
 
 .nav3 a:link {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .nav4 {
@@ -80,7 +80,7 @@
 }
 
 .nav4 a:link {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .nav5 {
@@ -98,11 +98,10 @@
 }
 
 .nav5 a:link {
-  text-decoration:none;
+  text-decoration: none;
 }
 
-#wrapper div {
-}
+#wrapper div {}
 
 .arrow:before {
   content: "";
@@ -180,7 +179,7 @@
 }
 
 #section {
-  width: 100vw; 
+  width: 100vw;
   height: 100vh;
   background-color: #D5CBCA;
 }
@@ -199,9 +198,9 @@
 }
 
 .flower3 img {
-  position: absolute;
-  top: 275vh;
-  margin-left: 75.1vw;
+  
+  float: right;
+  margin-top: -120vh;
   height: 40vh;
 }
 
@@ -247,16 +246,16 @@
 }
 
 .intro a:link {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .navcode a {
   position: absolute;
-  top:100vh;
+  top: 100vh;
 }
 
 #section1 {
-  width: 100vw; 
+  width: 100vw;
   height: 100vh;
   background-color: #E9EAEE;
 }
@@ -301,16 +300,16 @@
 }
 
 .getting-there a:link {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .navcode2 a {
   position: absolute;
-  top:200vh;
+  top: 200vh;
 }
 
 #section2 {
-  width: 100vw; 
+  width: 100vw;
   height: 100vh;
   background-color: #FBFBFB;
 }
@@ -370,7 +369,7 @@
 }
 
 .lodging-p-1 a:link {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .lodging-p-2 {
@@ -390,7 +389,7 @@
 
 .lodging-p-2 a {
   position: relative;
-  top:7.5vh;
+  top: 7.5vh;
   border: solid .2vh;
   padding-left: 14px;
   padding-right: 14px;
@@ -404,7 +403,7 @@
 }
 
 .lodging-p-2 a:link {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .lodging-p-2 a:hover {
@@ -444,16 +443,16 @@
 }
 
 .lodging-p-3 a:link {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .navcode3 a {
   position: absolute;
-  top:300vh;
+  top: 300vh;
 }
 
 #section3 {
-  width: 100vw; 
+  width: 100vw;
   height: 100vh;
   background-color: #DFEBDF;
 }
@@ -513,7 +512,7 @@
 }
 
 .registry-p-1 a:link {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .overlay {
@@ -528,6 +527,7 @@
   visibility: hidden;
   opacity: 0;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
@@ -570,7 +570,7 @@
 }
 
 .content a:link {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .content a:hover {
@@ -628,7 +628,7 @@
 }
 
 .registry-p-2 a:link {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .registry-p-3 {
@@ -663,16 +663,16 @@
 }
 
 .registry-p-3 a:link {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .navcode4 a {
   position: absolute;
-  top:400vh;
+  top: 400vh;
 }
 
 #section4 {
-  width: 100vw; 
+  width: 100vw;
   height: 100vh;
   background-color: #FFFFFF;
 }
@@ -723,17 +723,24 @@
 }
 
 .image-swap {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   margin-bottom: 4vh;
-   width: 100px;
-   height: 175px;
-   background-image: url(http://payload308.cargocollective.com/1/6/208850/8471571/Bonnie-04.png);
-   background-position: 0 0;
-}
- 
-.image-swap:hover {
-background-position: 0 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4vh;
+  width: 100px;
+  height: 175px;
+  background-image: url(http://payload308.cargocollective.com/1/6/208850/8471571/Bonnie-04.png);
+  background-position: 0 0;
 }
 
+.image-swap:hover {
+  background-position: 0 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  /* For mobile phones: */
+  [class*="flower3 img"] {
+    margin-left: 20vw;
+    height: 20vh;
+  }
+}
