@@ -257,7 +257,7 @@
 }
 
 .getting-there p {
-  position: relative;
+  position: inline-block;
   width: 100%;
   top: 4.5vh;
   font-style: normal;
