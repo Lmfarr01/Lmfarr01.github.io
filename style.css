@@ -198,7 +198,6 @@
 }
 
 .flower3 img {
-  
   float: right;
   margin-top: -120vh;
   height: 40vh;
@@ -216,23 +215,10 @@
   text-align: center;
 }
 
-.intro p {
-  position: relative;
-  width: 100%;
-  top: 1vh;
-  font-style: normal;
-  font-size: 2.5vh;
-  line-height: 170%;
-  font-weight: 400;
-  text-align: center;
-  font-family: 'Droid Serif', serif;
-}
-
 .intro a {
   position: inline-block;
   width: 100%;
-  bottom: 9vh;
-  border: solid .2vh;
+  border: solid .15em;
   padding-left: 14px;
   padding-right: 14px;
   padding-top: 10px;
@@ -737,10 +723,9 @@
   background-position: 0 100%;
 }
 
-@media only screen and (max-width: 700px) {
-  /* For mobile phones: */
-  [class*="flower3 img"] {
-    margin-left: 20vw;
-    height: 20vh;
-  }
+@media screen and (max-width: 480px) {
+    .intro {
+        max-width: 100px;
+      text-align; center;
+    }
 }
