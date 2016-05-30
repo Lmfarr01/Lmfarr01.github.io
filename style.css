@@ -723,9 +723,9 @@
   background-position: 0 100%;
 }
 
-@media screen and (max-width: 667px) {
+@media screen and (min-width: 100px) and (max-width: 700px) {
     .intro {
-      max-width: 100px;
+      max-width: 50px;
       text-align; center;
     }
 }
