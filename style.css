@@ -124,11 +124,10 @@
 
 .arrow2 {
   position: absolute;
-  left: 50vw;
+  left: 49vw;
   width: 3vh;
   height: 3vh;
   top: 190%;
-  margin: -20px 0 0 -20px;
   transform: rotate(45deg);
   border-left: none;
   border-top: none;
