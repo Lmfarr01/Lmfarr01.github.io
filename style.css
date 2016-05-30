@@ -137,11 +137,10 @@
 
 .arrow3 {
   position: absolute;
-  left: 50vw;
+  left: 49vw;
   width: 3vh;
   height: 3vh;
   top: 290%;
-  margin: -20px 0 0 -20px;
   transform: rotate(45deg);
   border-left: none;
   border-top: none;
@@ -151,11 +150,10 @@
 
 .arrow4 {
   position: absolute;
-  left: 50vw;
+  left: 49vw;
   width: 3vh;
   height: 3vh;
   top: 390%;
-  margin: -20px 0 0 -20px;
   transform: rotate(45deg);
   border-left: none;
   border-top: none;
@@ -272,7 +270,7 @@
   position: relative;
   width: 100%;
   top: 11vh;
-  border: solid .2vh;
+  border: solid .1em;
   padding-left: 14px;
   padding-right: 14px;
   padding-top: 10px;
