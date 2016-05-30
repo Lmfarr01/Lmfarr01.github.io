@@ -229,7 +229,7 @@
 }
 
 .intro a {
-  position: relative;
+  position: inline-block;
   width: 100%;
   bottom: 9vh;
   border: solid .2vh;
@@ -240,7 +240,7 @@
   font-weight: 400;
   font-style: normal;
   color: #32174D;
-  font-size: 1.7vh;
+  font-size: .15em;
   font-family: 'Numans', sans-serif;
   text-align: center;
 }
