@@ -723,7 +723,7 @@
   background-position: 0 100%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
     .intro {
         max-width: 100px;
       text-align; center;
