@@ -379,7 +379,7 @@
   padding-top: 10px;
   padding-bottom: 8px;
   font-weight: 400;
-  color: #D5CBCA;
+  color: #32174D;
   font-size: 1.7vh;
   font-family: 'Numans', sans-serif;
   text-align: center;
@@ -387,11 +387,6 @@
 
 .lodging-p-2 a:link {
   text-decoration: none;
-}
-
-.lodging-p-2 a:hover {
-  border: none;
-  text-decoration: line-through;
 }
 
 .lodging-p-3 {
