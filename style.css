@@ -255,7 +255,6 @@ a span {
 }
 
 .double-1 a span:hover {
-  font-size: 1.2rem;
   font-weight: bold;
   font-style: italic;
   font-family: 'Droid Serif', serif;
@@ -263,7 +262,6 @@ a span {
 }
 
 .double-2 a span:hover {
-  font-size: 1.2rem;
   font-weight: bold;
   font-style: italic;
   font-family: 'Droid Serif', serif;
