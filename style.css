@@ -166,7 +166,7 @@
   left: 50vw;
   width: 3vh;
   height: 3vh;
-  top: 590%;
+  top: 510%;
   margin: -20px 0 0 -20px;
   transform: rotate(45deg);
   border-left: none;
@@ -946,6 +946,17 @@ a span {
   width: 100vw;
   height: 100vh;
   background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 1200px) {
+    .activities-p-1 p,
+    .activities-p-2 p,
+    .activities-p-3 p,
+    .activities-p-4 p,
+    .activities-p-5 p,
+    .activities-p-6 p {
+      font-size: 2vw;
+    }
 }
 
 .soon {
