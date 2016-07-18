@@ -255,6 +255,7 @@ a span {
 }
 
 .double-1 a span:hover {
+  font-size: 1.2rem;
   font-weight: bold;
   font-style: italic;
   font-family: 'Droid Serif', serif;
@@ -262,6 +263,7 @@ a span {
 }
 
 .double-2 a span:hover {
+  font-size: 1.2rem;
   font-weight: bold;
   font-style: italic;
   font-family: 'Droid Serif', serif;
@@ -689,7 +691,7 @@ a span {
 
 #section4 {
   width: 100vw;
-  height: 200vh;
+  height: 120vh;
   background-color: #ffe4cd;
 }
 
@@ -831,7 +833,7 @@ a span {
 }
 
 .activities-p-4 {
-  padding-top: 30vh;
+  padding-top: 350px;
   padding-left: 6vw;
   max-width: 25vw;
   text-align: center;
@@ -867,7 +869,7 @@ a span {
 }
 
 .activities-p-5 {
-  padding-top: 30vh;
+  padding-top: 350px;
   max-width: 25vw;
   text-align: center;
 }
@@ -901,7 +903,7 @@ a span {
 }
 
 .activities-p-6 {
-  padding-top: 30vh;
+  padding-top: 350px;
   padding-right: 6vw;
   max-width: 25vw;
   text-align: center;
