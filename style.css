@@ -833,7 +833,7 @@ a span {
 }
 
 .activities-p-4 {
-  padding-top: 350px;
+  padding-top: 25%;
   padding-left: 6vw;
   max-width: 25vw;
   text-align: center;
@@ -869,7 +869,7 @@ a span {
 }
 
 .activities-p-5 {
-  padding-top: 350px;
+  padding-top: 25%;
   max-width: 25vw;
   text-align: center;
 }
@@ -903,7 +903,7 @@ a span {
 }
 
 .activities-p-6 {
-  padding-top: 350px;
+  padding-top: 25%;
   padding-right: 6vw;
   max-width: 25vw;
   text-align: center;
