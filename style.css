@@ -166,7 +166,7 @@
   left: 50vw;
   width: 3vh;
   height: 3vh;
-  top: 490%;
+  top: 590%;
   margin: -20px 0 0 -20px;
   transform: rotate(45deg);
   border-left: none;
@@ -176,6 +176,7 @@
 }
 
 #section {
+  position: relative;
   width: 100vw;
   height: 100vh;
   background-color: #D5CBCA;
@@ -183,9 +184,11 @@
 
 .flower img {
   position: absolute;
+  display: block;
   top: 10vh;
   right: 5vw;
   width: 46vw;
+  overflow: hidden;
 }
 
 .flower2 img {
@@ -200,6 +203,13 @@
   height: 40vh;
 }
 
+
+
+a span {
+  border: solid .15em #32174D;
+  padding: 10px 14px 10px 14px
+}
+
 .intro {
   position: absolute;
   top: 25vh;
@@ -212,24 +222,52 @@
   text-align: center;
 }
 
-.intro a {
-  position: inline-block;
-  width: 100%;
-  border: solid .15em;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-top: 10px;
-  padding-bottom: 8px;
+.intro .double-1 a {
+  position: absolute;
+  top: 28vw;
+  left: 42vw;
+  width: 5%;
   font-weight: 400;
   font-style: normal;
   color: #32174D;
   font-size: .15em;
   font-family: 'Numans', sans-serif;
   text-align: center;
+  
+}
+
+.intro .double-2 a {
+  position: absolute;
+  top: 28vw;
+  right: 42vw;
+  width: 5%;
+  font-weight: 400;
+  font-style: normal;
+  color: #32174D;
+  font-size: .15em;
+  font-family: 'Numans', sans-serif;
+  text-align: center;
+  
 }
 
 .intro a:link {
   text-decoration: none;
+}
+
+.double-1 a span:hover {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Droid Serif', serif;
+  border: none;
+}
+
+.double-2 a span:hover {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Droid Serif', serif;
+  border: none;
 }
 
 .navcode a {
@@ -257,20 +295,20 @@
 .getting-there p {
   position: inline-block;
   width: 100%;
-  top: 4.5vh;
   font-style: normal;
   font-size: .7em;
   line-height: 170%;
   font-weight: 400;
   text-align: center;
   font-family: 'Droid Serif', serif;
+  padding-top: 5vw;
 }
 
 .getting-there a {
   position: relative;
   width: 100%;
   top: 11vh;
-  border: solid .1em;
+  border: .15em solid;
   padding-left: 14px;
   padding-right: 14px;
   padding-top: 10px;
@@ -517,7 +555,7 @@
   padding: 20px;
   color: #32174D;
   background: #fff;
-  width: 30%;
+  width: 45%;
   position: relative;
   top: 25vh;
   transition: all 5s ease-in-out;
@@ -574,6 +612,8 @@
   max-height: 40%;
   overflow: auto;
 }
+
+
 
 .registry-p-2 {
   padding-top: 38vh;
@@ -651,13 +691,266 @@
 
 #section4 {
   width: 100vw;
+  height: 200vh;
+  background-color: #ffe4cd;
+}
+
+.activities {
+  position: absolute;
+  top: 415vh;
+  width: 100%;
+  font-style: normal;
+  font-size: 3vh;
+  font-weight: 400;
+  color: #32174D;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+.container4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container4 div {
+  width: 100vw;
+  height: 10vh;
+}
+
+.container4-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container4-1 div {
+  width: 100vw;
+  height: 15vh;
+}
+
+.activities-p-1 {
+  padding-top: 38vh;
+  padding-left: 6vw;
+  max-width: 25vw;
+  text-align: center;
+}
+
+.activities-p-1 p {
+  font-weight: 400;
+  line-height: 170%;
+  max-width: 25vw;
+  color: #32174D;
+  font-size: 2.5vh;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+.activities-p-1 a {
+  position: relative;
+  top: 7.5vh;
+  border: solid .2vh;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  color: #32174D;
+  font-size: 1.7vh;
+  font-family: 'Numans', sans-serif;
+  text-align: center;
+}
+
+.activities-p-1 a:link {
+  text-decoration: none;
+}
+
+.activities-p-2 {
+  padding-top: 38vh;
+  max-width: 25vw;
+  text-align: center;
+}
+
+.activities-p-2 p {
+  font-weight: 400;
+  line-height: 170%;
+  color: #32174D;
+  font-size: 2.5vh;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+.activities-p-2 a {
+  position: relative;
+  top: 7.5vh;
+  border: solid .2vh;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  color: #32174D;
+  font-size: 1.7vh;
+  font-family: 'Numans', sans-serif;
+  text-align: center;
+}
+
+.activities-p-2 a:link {
+  text-decoration: none;
+}
+
+.activities-p-3 {
+  padding-top: 38vh;
+  padding-right: 6vw;
+  max-width: 25vw;
+  text-align: center;
+}
+
+.activities-p-3 p {
+  font-weight: 400;
+  line-height: 170%;
+  color: #32174D;
+  font-size: 2.5vh;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+.activities-p-3 a {
+  position: relative;
+  top: 7.5vh;
+  border: solid .2vh;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  color: #32174D;
+  font-size: 1.7vh;
+  font-family: 'Numans', sans-serif;
+  text-align: center;
+}
+
+.activities-p-3 a:link {
+  text-decoration: none;
+}
+
+.activities-p-4 {
+  padding-top: 30vh;
+  padding-left: 6vw;
+  max-width: 25vw;
+  text-align: center;
+}
+
+.activities-p-4 p {
+  font-weight: 400;
+  line-height: 170%;
+  max-width: 25vw;
+  color: #32174D;
+  font-size: 2.5vh;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+.activities-p-4 a {
+  position: relative;
+  top: 7.5vh;
+  border: solid .2vh;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  color: #32174D;
+  font-size: 1.7vh;
+  font-family: 'Numans', sans-serif;
+  text-align: center;
+}
+
+.activities-p-4 a:link {
+  text-decoration: none;
+}
+
+.activities-p-5 {
+  padding-top: 30vh;
+  max-width: 25vw;
+  text-align: center;
+}
+
+.activities-p-5 p {
+  font-weight: 400;
+  line-height: 170%;
+  color: #32174D;
+  font-size: 2.5vh;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+.activities-p-5 a {
+  position: relative;
+  top: 7.5vh;
+  border: solid .2vh;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  color: #32174D;
+  font-size: 1.7vh;
+  font-family: 'Numans', sans-serif;
+  text-align: center;
+}
+
+.activities-p-5 a:link {
+  text-decoration: none;
+}
+
+.activities-p-6 {
+  padding-top: 30vh;
+  padding-right: 6vw;
+  max-width: 25vw;
+  text-align: center;
+}
+
+.activities-p-6 p {
+  font-weight: 400;
+  line-height: 170%;
+  color: #32174D;
+  font-size: 2.5vh;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+.activities-p-6 a {
+  position: relative;
+  top: 7.5vh;
+  border: solid .2vh;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  color: #32174D;
+  font-size: 1.7vh;
+  font-family: 'Numans', sans-serif;
+  text-align: center;
+}
+
+.activities-p-6 a:link {
+  text-decoration: none;
+}
+
+.navcode5 a {
+  position: absolute;
+  top: 600vh;
+}
+
+#section5 {
+  width: 100vw;
   height: 100vh;
   background-color: #FFFFFF;
 }
 
 .soon {
   position: absolute;
-  top: 420%;
+  top: 620%;
   width: 100%;
   font-style: normal;
   font-size: 3vh;
