@@ -3,6 +3,19 @@
   padding: 0;
 }
 
+/* page one */
+
+#section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #D5CBCA;
+}
+
+#section .container {
+      display: none;
+    }
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -13,6 +26,8 @@
   width: 100vw;
   height: 70vh;
 }
+
+/** nav bar **/
 
 .nav {
   padding-top: 40px;
@@ -101,7 +116,8 @@
   text-decoration: none;
 }
 
-#wrapper div {}
+
+/** page arrows **/
 
 .arrow:before {
   content: "";
@@ -110,8 +126,9 @@
 }
 
 .arrow {
+  display: block;
   position: absolute;
-  left: 49vw;
+  left: 50vw;
   width: 3vh;
   height: 3vh;
   top: 90vh;
@@ -122,414 +139,35 @@
   border-bottom: .23vh #32174D solid;
 }
 
-.arrow2 {
-  position: absolute;
-  left: 49vw;
-  width: 3vh;
-  height: 3vh;
-  top: 190%;
-  transform: rotate(45deg);
-  border-left: none;
-  border-top: none;
-  border-right: .23vh #32174D solid;
-  border-bottom: .23vh #32174D solid;
-}
 
-.arrow3 {
-  position: absolute;
-  left: 49vw;
-  width: 3vh;
-  height: 3vh;
-  top: 290%;
-  transform: rotate(45deg);
-  border-left: none;
-  border-top: none;
-  border-right: .23vh #32174D solid;
-  border-bottom: .23vh #32174D solid;
-}
-
-.arrow4 {
-  position: absolute;
-  left: 49vw;
-  width: 3vh;
-  height: 3vh;
-  top: 390%;
-  transform: rotate(45deg);
-  border-left: none;
-  border-top: none;
-  border-right: .23vh #32174D solid;
-  border-bottom: .23vh #32174D solid;
-}
-
-.arrow5 {
-  position: absolute;
-  left: 50vw;
-  width: 3vh;
-  height: 3vh;
-  top: 510%;
-  margin: -20px 0 0 -20px;
-  transform: rotate(45deg);
-  border-left: none;
-  border-top: none;
-  border-right: .23vh #32174D solid;
-  border-bottom: .23vh #32174D solid;
-}
-
-#section {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-color: #D5CBCA;
-}
+/** flower images **/
 
 .flower img {
-  position: absolute;
   display: block;
-  top: 10vh;
+  position: absolute;
+  top: 15vh;
   right: 5vw;
-  width: 46vw;
-  overflow: hidden;
+  width: 50vw;
+  
 }
 
 .flower2 img {
+  display: block;
   position: absolute;
-  top: 175vh;
-  height: 45vh;
+  top: 145vh;
+  width: 25vw;
 }
 
 .flower3 img {
-  float: right;
-  margin-top: -120vh;
-  height: 40vh;
-}
-
-
-
-a span {
-  border: solid .15em #32174D;
-  padding: 10px 14px 10px 14px
-}
-
-.intro {
+  display: block;
   position: absolute;
-  top: 25vh;
-  width: 100%;
-  font-style: italic;
-  font-size: 10vw;
-  font-weight: 400;
-  color: #32174D;
-  font-family: 'Droid Serif', serif;
-  text-align: center;
+  top: 275vh;
+  right: 0;
+  height: 15vw;
 }
 
-.intro .double-1 a {
-  position: absolute;
-  top: 28vw;
-  left: 42vw;
-  width: 5%;
-  font-weight: 400;
-  font-style: normal;
-  color: #32174D;
-  font-size: .15em;
-  font-family: 'Numans', sans-serif;
-  text-align: center;
-  
-}
 
-.intro .double-2 a {
-  position: absolute;
-  top: 28vw;
-  right: 42vw;
-  width: 5%;
-  font-weight: 400;
-  font-style: normal;
-  color: #32174D;
-  font-size: .15em;
-  font-family: 'Numans', sans-serif;
-  text-align: center;
-  
-}
-
-.intro a:link {
-  text-decoration: none;
-}
-
-.double-1 a span:hover {
-  font-size: 1.2rem;
-  font-weight: bold;
-  font-style: italic;
-  font-family: 'Droid Serif', serif;
-  border: none;
-}
-
-.double-2 a span:hover {
-  font-size: 1.2rem;
-  font-weight: bold;
-  font-style: italic;
-  font-family: 'Droid Serif', serif;
-  border: none;
-}
-
-.navcode a {
-  position: absolute;
-  top: 100vh;
-}
-
-#section1 {
-  width: 100vw;
-  height: 100vh;
-  background-color: #E9EAEE;
-}
-
-.getting-there {
-  position: absolute;
-  top: 115vh;
-  width: 100%;
-  font-size: 3vh;
-  font-weight: 400;
-  color: #32174D;
-  font-family: 'Droid Serif', serif;
-  text-align: center;
-}
-
-.getting-there p {
-  position: inline-block;
-  width: 100%;
-  font-style: normal;
-  font-size: .7em;
-  line-height: 170%;
-  font-weight: 400;
-  text-align: center;
-  font-family: 'Droid Serif', serif;
-  padding-top: 5vw;
-}
-
-.getting-there a {
-  position: relative;
-  width: 100%;
-  top: 11vh;
-  border: .15em solid;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-top: 10px;
-  padding-bottom: 8px;
-  font-weight: 400;
-  color: #32174D;
-  font-size: 1.7vh;
-  font-family: 'Numans', sans-serif;
-  text-align: center;
-}
-
-.getting-there a:link {
-  text-decoration: none;
-}
-
-.navcode2 a {
-  position: absolute;
-  top: 200vh;
-}
-
-#section2 {
-  width: 100vw;
-  height: 100vh;
-  background-color: #FBFBFB;
-}
-
-.lodging {
-  position: absolute;
-  top: 215vh;
-  width: 100%;
-  font-style: normal;
-  font-size: 3vh;
-  font-weight: 400;
-  color: #32174D;
-  font-family: 'Droid Serif', serif;
-  text-align: center;
-}
-
-.container2 {
-  display: flex;
-  justify-content: space-between;
-}
-
-.container2 div {
-  width: 100vw;
-  height: 100vh;
-}
-
-.lodging-p-1 {
-  padding-top: 38vh;
-  padding-left: 6vw;
-  max-width: 25vw;
-  text-align: center;
-}
-
-.lodging-p-1 p {
-  font-weight: 400;
-  line-height: 170%;
-  max-width: 25vw;
-  color: #32174D;
-  font-size: 2.5vh;
-  font-family: 'Droid Serif', serif;
-  text-align: center;
-}
-
-.lodging-p-1 a {
-  position: relative;
-  top: 7.5vh;
-  border: solid .2vh;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-top: 10px;
-  padding-bottom: 8px;
-  font-weight: 400;
-  color: #32174D;
-  font-size: 1.7vh;
-  font-family: 'Numans', sans-serif;
-  text-align: center;
-}
-
-.lodging-p-1 a:link {
-  text-decoration: none;
-}
-
-.lodging-p-2 {
-  padding-top: 38vh;
-  max-width: 25vw;
-  text-align: center;
-}
-
-.lodging-p-2 p {
-  font-weight: 400;
-  line-height: 170%;
-  color: #32174D;
-  font-size: 2.5vh;
-  font-family: 'Droid Serif', serif;
-  text-align: center;
-}
-
-.lodging-p-2 a {
-  position: relative;
-  top: 7.5vh;
-  border: solid .2vh;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-top: 10px;
-  padding-bottom: 8px;
-  font-weight: 400;
-  color: #32174D;
-  font-size: 1.7vh;
-  font-family: 'Numans', sans-serif;
-  text-align: center;
-}
-
-.lodging-p-2 a:link {
-  text-decoration: none;
-}
-
-.lodging-p-3 {
-  padding-top: 38vh;
-  padding-right: 6vw;
-  max-width: 25vw;
-  text-align: center;
-}
-
-.lodging-p-3 p {
-  font-weight: 400;
-  line-height: 170%;
-  color: #32174D;
-  font-size: 2.5vh;
-  font-family: 'Droid Serif', serif;
-  text-align: center;
-}
-
-.lodging-p-3 a {
-  position: relative;
-  top: 7.5vh;
-  border: solid .2vh;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-top: 10px;
-  padding-bottom: 8px;
-  font-weight: 400;
-  color: #32174D;
-  font-size: 1.7vh;
-  font-family: 'Numans', sans-serif;
-  text-align: center;
-}
-
-.lodging-p-3 a:link {
-  text-decoration: none;
-}
-
-.navcode3 a {
-  position: absolute;
-  top: 300vh;
-}
-
-#section3 {
-  width: 100vw;
-  height: 100vh;
-  background-color: #DFEBDF;
-}
-
-.registry {
-  position: absolute;
-  top: 315vh;
-  width: 100%;
-  font-style: normal;
-  font-size: 3vh;
-  font-weight: 400;
-  color: #32174D;
-  font-family: 'Droid Serif', serif;
-  text-align: center;
-}
-
-.container3 {
-  display: flex;
-  justify-content: space-between;
-}
-
-.container3 div {
-  width: 100vw;
-  height: 100vh;
-}
-
-.registry-p-1 {
-  padding-top: 38vh;
-  padding-left: 6vw;
-  max-width: 25vw;
-  text-align: center;
-}
-
-.registry-p-1 p {
-  font-weight: 400;
-  line-height: 170%;
-  max-width: 25vw;
-  color: #32174D;
-  font-size: 2.5vh;
-  font-family: 'Droid Serif', serif;
-  text-align: center;
-}
-
-.registry-p-1 a {
-  position: relative;
-  top: 7.5vh;
-  border: solid .2vh;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-top: 10px;
-  padding-bottom: 8px;
-  font-weight: 400;
-  color: #32174D;
-  font-size: 1.7vh;
-  font-family: 'Numans', sans-serif;
-  text-align: center;
-}
-
-.registry-p-1 a:link {
-  text-decoration: none;
-}
+/** pop-ups **/
 
 .overlay {
   position: fixed;
@@ -614,33 +252,364 @@ a span {
 }
 
 
+/** page one copy **/
 
-.registry-p-2 {
-  padding-top: 38vh;
-  max-width: 25vw;
-  text-align: center;
+a span {
+  border: solid .15em #32174D;
+  padding: 10px 14px 10px 14px
 }
 
-.registry-p-2 p {
+.intro {
+  position: absolute;
+  top: 20vh;
+  width: 100%;
+  font-style: italic;
+  font-size: 10vw;
   font-weight: 400;
-  line-height: 170%;
   color: #32174D;
-  font-size: 2.5vh;
   font-family: 'Droid Serif', serif;
   text-align: center;
 }
 
-.registry-p-2 a {
-  position: relative;
-  top: 7.5vh;
-  border: solid .2vh;
+.intro .double-1 a {
+  position: absolute;
+  top: 25vw;
+  left: 43vw;
+  width: 5%;
+  font-weight: 400;
+  font-style: normal;
+  color: #32174D;
+  font-size: 18px;
+  font-family: 'Numans', sans-serif;
+  text-align: center;
+  
+}
+
+.intro .double-2 a {
+  position: absolute;
+  top: 25vw;
+  right: 43vw;
+  width: 5%;
+  font-weight: 400;
+  font-style: normal;
+  color: #32174D;
+  font-size: 18px;
+  font-family: 'Numans', sans-serif;
+  text-align: center;
+  
+}
+
+.intro a:link {
+  text-decoration: none;
+}
+
+.double-1 a span:hover {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Droid Serif', serif;
+  border: none;
+}
+
+.double-2 a span:hover {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Droid Serif', serif;
+  border: none;
+}
+
+
+/* page two */
+
+.navcode a {
+  position: absolute;
+  top: 100vh;
+}
+
+.container1 {
+  display: flex;
+}
+
+.container1 div {
+  width: 100vw;
+}
+
+.getting-there {
+  background-color: #E9EAEE;
+  padding: 160px 0 160px 0;
+}
+
+.getting-there h1 {
+  position: absolute;
+  width: 100%;
+  font-size: 56px;
+  font-weight: 700;
+  color: #32174D;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+.getting-there-p-1 {
+  padding: 100px 150px 0 150px;
+  text-align: center;
+}
+
+.getting-there-p-1 p {
+  margin-bottom: 40px;
+  font-weight: 400;
+  line-height: 170%;
+  color: #32174D;
+  font-size: 2vw;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+.getting-there a {
+  border: solid .15em;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  color: #32174D;
+  font-size: 18px;
+  font-family: 'Numans', sans-serif;
+  text-align: center;
+}
+
+.getting-there a:link {
+  text-decoration: none;
+}
+
+
+/* page three */
+
+.navcode2 a {
+  position: absolute;
+  top: 155vh;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container2 div {
+  width: 100vw;
+}
+
+.lodging {
+  background-color: #FBFBFB;
+  padding: 160px 0 180px 0;
+}
+
+.lodging h1 {
+  position: absolute;
+  width: 100%;
+  font-style: normal;
+  font-size: 56px;
+  font-weight: 700;
+  color: #32174D;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+.lodging-p-1 {
+  padding-top: 130px;
+  padding-left: 6vw;
+  max-width: 25vw;
+  text-align: center;
+}
+
+.lodging-p-1 p {
+  margin-bottom: 40px;
+  font-weight: 400;
+  line-height: 170%;
+  color: #32174D;
+  font-size: 2.2vw;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+.lodging-p-1 a {
+  border: solid .15em;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  color: #32174D;
+  font-size: 18px;
+  font-family: 'Numans', sans-serif;
+  text-align: center;
+}
+
+.lodging-p-1 a:link {
+  text-decoration: none;
+}
+
+.lodging-p-2 {
+  padding-top: 130px;
+  max-width: 25vw;
+  text-align: center;
+}
+
+.lodging-p-2 p {
+  margin-bottom: 40px;
+  font-weight: 400;
+  line-height: 170%;
+  color: #32174D;
+  font-size: 2.2vw;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+.lodging-p-2 a {
+  border: solid .15em;
   padding-left: 14px;
   padding-right: 14px;
   padding-top: 10px;
   padding-bottom: 8px;
   font-weight: 400;
   color: #32174D;
-  font-size: 1.7vh;
+  font-size: 18px;
+  font-family: 'Numans', sans-serif;
+  text-align: center;
+}
+
+.lodging-p-2 a:link {
+  text-decoration: none;
+}
+
+.lodging-p-3 {
+  padding-top: 130px;
+  padding-right: 6vw;
+  max-width: 25vw;
+  text-align: center;
+}
+
+.lodging-p-3 p {
+  margin-bottom: 40px;
+  font-weight: 400;
+  line-height: 170%;
+  color: #32174D;
+  font-size: 2.2vw;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+.lodging-p-3 a {
+  border: solid .15em;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  color: #32174D;
+  font-size: 18px;
+  font-family: 'Numans', sans-serif;
+  text-align: center;
+}
+
+.lodging-p-3 a:link {
+  text-decoration: none;
+}
+
+.navcode3 a {
+  position: absolute;
+  top: 300vh;
+}
+
+
+/* page four */
+
+
+.container3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container3 div {
+  width: 100vw;
+}
+
+.registry {
+  background-color: #DFEBDF;
+  padding: 160px 0 160px 0;
+}
+
+.registry h1 {
+  position: absolute;
+  width: 100%;
+  font-style: normal;
+  font-size: 56px;
+  font-weight: 700;
+  color: #32174D;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+.registry-p-1 {
+  display: block;
+  padding-top: 130px;
+  padding-left: 6vw;
+  max-width: 25vw;
+  text-align: center;
+}
+
+.registry-p-1 p {
+  margin-bottom: 40px;
+  font-weight: 400;
+  line-height: 170%;
+  color: #32174D;
+  font-size: 2.2vw;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+.registry-p-1 a {
+  border: solid .15em;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  color: #32174D;
+  font-size: 18px;
+  font-family: 'Numans', sans-serif;
+  text-align: center;
+}
+
+.registry-p-1 a:link {
+  text-decoration: none;
+}
+
+.registry-p-2 {
+  padding-top: 130px;
+  max-width: 25vw;
+  text-align: center;
+}
+
+.registry-p-2 p {
+  margin-bottom: 40px;
+  font-weight: 400;
+  line-height: 170%;
+  color: #32174D;
+  font-size: 2.2vw;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+.registry-p-2 a {
+  border: solid .15em;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  color: #32174D;
+  font-size: 18px;
   font-family: 'Numans', sans-serif;
   text-align: center;
 }
@@ -650,32 +619,31 @@ a span {
 }
 
 .registry-p-3 {
-  padding-top: 38vh;
+  padding-top: 130px;
   padding-right: 6vw;
   max-width: 25vw;
   text-align: center;
 }
 
 .registry-p-3 p {
+  margin-bottom: 40px;
   font-weight: 400;
   line-height: 170%;
   color: #32174D;
-  font-size: 2.5vh;
+  font-size: 2.2vw;
   font-family: 'Droid Serif', serif;
   text-align: center;
 }
 
 .registry-p-3 a {
-  position: relative;
-  top: 7.5vh;
-  border: solid .2vh;
+  border: solid .15em;
   padding-left: 14px;
   padding-right: 14px;
   padding-top: 10px;
   padding-bottom: 8px;
   font-weight: 400;
   color: #32174D;
-  font-size: 1.7vh;
+  font-size: 18px;
   font-family: 'Numans', sans-serif;
   text-align: center;
 }
@@ -686,26 +654,13 @@ a span {
 
 .navcode4 a {
   position: absolute;
-  top: 400vh;
+  top: 410vh;
 }
 
-#section4 {
-  width: 100vw;
-  height: 120vh;
-  background-color: #ffe4cd;
-}
 
-.activities {
-  position: absolute;
-  top: 415vh;
-  width: 100%;
-  font-style: normal;
-  font-size: 3vh;
-  font-weight: 400;
-  color: #32174D;
-  font-family: 'Droid Serif', serif;
-  text-align: center;
-}
+/* page five */
+
+
 
 .container4 {
   display: flex;
@@ -714,7 +669,6 @@ a span {
 
 .container4 div {
   width: 100vw;
-  height: 10vh;
 }
 
 .container4-1 {
@@ -724,37 +678,51 @@ a span {
 
 .container4-1 div {
   width: 100vw;
-  height: 15vh;
+}
+
+.activities {
+  background-color: #ffe4cd;
+  padding: 160px 0 160px 0;
+}
+
+.activities h1 {
+  position: absolute;
+  width: 100%;
+  font-style: normal;
+  font-size: 56px;
+  font-weight: 700;
+  color: #32174D;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
 }
 
 .activities-p-1 {
-  padding-top: 30vh;
+  padding-top: 130px;
   padding-left: 6vw;
   max-width: 25vw;
   text-align: center;
 }
 
 .activities-p-1 p {
+  margin-bottom: 40px;
   font-weight: 400;
   line-height: 170%;
-  max-width: 25vw;
   color: #32174D;
-  font-size: 2.5vh;
+  font-size: 2.2vw;
   font-family: 'Droid Serif', serif;
   text-align: center;
 }
 
 .activities-p-1 a {
-  position: relative;
-  top: 7.5vh;
-  border: solid .2vh;
+  border: solid .15em;
+  margin-top: 10px;
   padding-left: 14px;
   padding-right: 14px;
   padding-top: 10px;
   padding-bottom: 8px;
   font-weight: 400;
   color: #32174D;
-  font-size: 1.7vh;
+  font-size: 18px;
   font-family: 'Numans', sans-serif;
   text-align: center;
 }
@@ -764,31 +732,30 @@ a span {
 }
 
 .activities-p-2 {
-  padding-top: 30vh;
+  padding-top: 130px;
   max-width: 25vw;
   text-align: center;
 }
 
 .activities-p-2 p {
+  margin-bottom: 40px;
   font-weight: 400;
   line-height: 170%;
   color: #32174D;
-  font-size: 2.5vh;
+  font-size: 2.2vw;
   font-family: 'Droid Serif', serif;
   text-align: center;
 }
 
 .activities-p-2 a {
-  position: relative;
-  top: 7.5vh;
-  border: solid .2vh;
+  border: solid .15em;
   padding-left: 14px;
   padding-right: 14px;
   padding-top: 10px;
   padding-bottom: 8px;
   font-weight: 400;
   color: #32174D;
-  font-size: 1.7vh;
+  font-size: 18px;
   font-family: 'Numans', sans-serif;
   text-align: center;
 }
@@ -798,32 +765,31 @@ a span {
 }
 
 .activities-p-3 {
-  padding-top: 30vh;
+  padding-top: 130px;
   padding-right: 6vw;
   max-width: 25vw;
   text-align: center;
 }
 
 .activities-p-3 p {
+  margin-bottom: 40px;
   font-weight: 400;
   line-height: 170%;
   color: #32174D;
-  font-size: 2.5vh;
+  font-size: 2.2vw;
   font-family: 'Droid Serif', serif;
   text-align: center;
 }
 
 .activities-p-3 a {
-  position: relative;
-  top: 7.5vh;
-  border: solid .2vh;
+  border: solid .15em;
   padding-left: 14px;
   padding-right: 14px;
   padding-top: 10px;
   padding-bottom: 8px;
   font-weight: 400;
   color: #32174D;
-  font-size: 1.7vh;
+  font-size: 18px;
   font-family: 'Numans', sans-serif;
   text-align: center;
 }
@@ -833,33 +799,31 @@ a span {
 }
 
 .activities-p-4 {
-  padding-top: 25%;
+  padding-top: 130px;
   padding-left: 6vw;
   max-width: 25vw;
   text-align: center;
 }
 
 .activities-p-4 p {
+  margin-bottom: 40px;
   font-weight: 400;
   line-height: 170%;
-  max-width: 25vw;
   color: #32174D;
-  font-size: 2.5vh;
+  font-size: 2.2vw;
   font-family: 'Droid Serif', serif;
   text-align: center;
 }
 
 .activities-p-4 a {
-  position: relative;
-  top: 7.5vh;
-  border: solid .2vh;
+  border: solid .15em;
   padding-left: 14px;
   padding-right: 14px;
   padding-top: 10px;
   padding-bottom: 8px;
   font-weight: 400;
   color: #32174D;
-  font-size: 1.7vh;
+  font-size: 18px;
   font-family: 'Numans', sans-serif;
   text-align: center;
 }
@@ -869,31 +833,30 @@ a span {
 }
 
 .activities-p-5 {
-  padding-top: 25%;
+  padding-top: 130px;
   max-width: 25vw;
   text-align: center;
 }
 
 .activities-p-5 p {
+  margin-bottom: 40px;
   font-weight: 400;
   line-height: 170%;
   color: #32174D;
-  font-size: 2.5vh;
+  font-size: 2.2vw;
   font-family: 'Droid Serif', serif;
   text-align: center;
 }
 
 .activities-p-5 a {
-  position: relative;
-  top: 7.5vh;
-  border: solid .2vh;
+  border: solid .15em;
   padding-left: 14px;
   padding-right: 14px;
   padding-top: 10px;
   padding-bottom: 8px;
   font-weight: 400;
   color: #32174D;
-  font-size: 1.7vh;
+  font-size: 18px;
   font-family: 'Numans', sans-serif;
   text-align: center;
 }
@@ -903,32 +866,31 @@ a span {
 }
 
 .activities-p-6 {
-  padding-top: 25%;
+  padding-top: 130px;
   padding-right: 6vw;
   max-width: 25vw;
   text-align: center;
 }
 
 .activities-p-6 p {
+  margin-bottom: 40px;
   font-weight: 400;
   line-height: 170%;
   color: #32174D;
-  font-size: 2.5vh;
+  font-size: 2.2vw;
   font-family: 'Droid Serif', serif;
   text-align: center;
 }
 
 .activities-p-6 a {
-  position: relative;
-  top: 7.5vh;
-  border: solid .2vh;
+  border: solid .15em;
   padding-left: 14px;
   padding-right: 14px;
   padding-top: 10px;
   padding-bottom: 8px;
   font-weight: 400;
   color: #32174D;
-  font-size: 1.7vh;
+  font-size: 18px;
   font-family: 'Numans', sans-serif;
   text-align: center;
 }
@@ -937,65 +899,70 @@ a span {
   text-decoration: none;
 }
 
+
+/* page six */
+
 .navcode5 a {
   position: absolute;
   top: 600vh;
 }
 
-#section5 {
-  width: 100vw;
-  height: 100vh;
-  background-color: #FFFFFF;
+.container5 {
+  display: flex;
+  justify-content: space-between;
 }
 
-@media screen and (max-width: 1200px) {
-    .activities-p-1 p,
-    .activities-p-2 p,
-    .activities-p-3 p,
-    .activities-p-4 p,
-    .activities-p-5 p,
-    .activities-p-6 p {
-      font-size: 2vw;
-    }
+.container5 div {
+  width: 100vw;
+}.container4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container4 div {
+  width: 100vw;
 }
 
 .soon {
+  background-color: #fff;
+  padding: 160px 0 200px 0;
+}
+
+.soon h1 {
   position: absolute;
-  top: 540%;
   width: 100%;
   font-style: normal;
-  font-size: 3vh;
-  font-weight: 400;
+  font-size: 56px;
+  font-weight: 700;
   color: #D3AF35;
   font-family: 'Droid Serif', serif;
   text-align: center;
 }
 
-.soon p {
-  position: relative;
-  width: 100%;
-  top: 4.5vh;
-  font-style: normal;
-  font-size: 2.5vh;
-  line-height: 170%;
-  font-weight: 400;
-  color: #32174D;
+.soon-p-1 {
+  padding-top: 80px;
   text-align: center;
+}
+
+.soon p {
+  margin-bottom: 40px;
+  font-weight: 400;
+  line-height: 170%;
+  color: #32174D;
+  font-size: 2.2vw;
   font-family: 'Droid Serif', serif;
+  text-align: center;
 }
 
 .soon a {
-  position: relative;
-  width: 100%;
-  top: 11vh;
-  border: solid .2vh;
+  border: solid .15em;
   padding-left: 14px;
   padding-right: 14px;
   padding-top: 10px;
   padding-bottom: 8px;
   font-weight: 400;
   color: #32174D;
-  font-size: 1.7vh;
+  font-size: 18px;
   font-family: 'Numans', sans-serif;
   text-align: center;
 }
@@ -1019,12 +986,223 @@ a span {
   background-position: 0 100%;
 }
 
-@media screen and (max-width: 700px) {
-    .intro {
-      max-width: 300px;
-      text-align: center;
+
+
+
+
+
+
+
+/* responsive & mobile */
+
+@media screen and (max-width: 1200px) {
+    .activities-p-1 p,
+    .activities-p-2 p,
+    .activities-p-3 p,
+    .activities-p-4 p,
+    .activities-p-5 p,
+    .activities-p-6 p {
+      font-size: 2vw;
     }
-    .getting-there p {
-      font-size: 1.5vh;
+    .intro .double-1 a {
+      font-size: 1.5vw;
+      left: 42vw;
+    }
+    .intro .double-2 a {
+      font-size: 1.5vw;
+      right: 42vw;
     }
 }
+
+
+@media screen and (max-width: 979px) {
+    .getting-there p {
+      font-size: 3vw;
+    }
+    .flower img,
+    .flower2 img,
+    .flower3 img {
+      display: none;
+    }
+    #section .container {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 659px) {
+    .intro {
+      display: block;
+      width: 100%;
+      padding-left: 10px;
+      font-size: 20vw;
+      text-align: left;
+      line-height: 30vw;
+    }
+    .intro .double-1 a {
+      position: absolute;
+      display: block;
+      width: 100vw;
+      top: 85vw;
+      left: 0;
+    }
+    .intro .double-2 a {
+      position: absolute;
+      display: block;
+      width: 100vw;
+      top: 100vw;
+      left: 0;
+    }
+  
+    h1 {
+      display: block;
+      width: 100%;
+      font-size: 48px !important;
+    }
+  
+    .arrow,
+    .arrow1,
+    .arrow2,
+    .arrow3,
+    .arrow4,
+    .arrow5 {
+      display: none;
+    }
+  
+  /* registry mobile */
+  
+  .getting-there-p-1 {
+    padding: 20px 20px;
+  }
+  
+    .getting-there p {
+      display: block;
+      float: none;
+      font-size: 5vw;
+      padding-top: 20vw;
+    }
+  
+  
+    div .lodging-p-1,
+    div .lodging-p-2,
+    div .lodging-p-3,
+    div .lodging-p-4,
+    div .lodging-p-5,
+    div .lodging-p-6{
+      display: block;
+      float: none;
+      min-width: 85vw;
+      margin: 0 auto;
+      padding: 5vw 0 0 0;
+    }
+  
+    div .lodging-p-1 p,
+    div .lodging-p-2 p,
+    div .lodging-p-3 p,
+    div .lodging-p-4 p,
+    div .lodging-p-5 p,
+    div .lodging-p-6 p{
+      display: block;
+      width: 100%;
+      font-size: 5vw;
+      padding-top: 10vw;
+    }
+  
+    .container2 {
+      display: block;
+      width: 100%;
+      justify-content: normal;
+      padding-top: 10vw;
+    }
+  
+    .container2 div {
+      width: 100vw;
+    }
+  
+  
+  /* registry mobile */
+  
+  
+    div .registry-p-1,
+    div .registry-p-2,
+    div .registry-p-3,
+    div .registry-p-4,
+    div .registry-p-5,
+    div .registry-p-6{
+      display: block;
+      float: none;
+      min-width: 85vw;
+      margin: 0 auto;
+      padding: 5vw 0 0 0;
+    }
+  
+    div .registry-p-1 p,
+    div .registry-p-2 p,
+    div .registry-p-3 p,
+    div .registry-p-4 p,
+    div .registry-p-5 p,
+    div .registry-p-6 p{
+      display: block;
+      width: 100%;
+      font-size: 5vw;
+      padding-top: 10vw;
+    }
+  
+    .container3 {
+      display: block;
+      width: 100%;
+      justify-content: normal;
+      padding-top: 10vw;
+    }
+  
+    .container3 div {
+      width: 100vw;
+    }
+  
+  /* activities mobile */
+  
+  
+  
+    div .activities-p-1,
+    div .activities-p-2,
+    div .activities-p-3,
+    div .activities-p-4,
+    div .activities-p-5,
+    div .activities-p-6 {
+      display: block;
+      float: none;
+      min-width: 85vw;
+      margin: 0 auto;
+      padding: 5vw 0 0 0;
+    }
+  
+    div .activities-p-1 p,
+    div .activities-p-2 p,
+    div .activities-p-3 p,
+    div .activities-p-4 p,
+    div .activities-p-5 p,
+    div .activities-p-6 p {
+      display: block;
+      width: 100%;
+      font-size: 5vw;
+      padding-top: 10vw;
+    }
+  
+    .container4 {
+      display: block;
+      width: 100%;
+      justify-content: normal;
+      padding-top: 10vw;
+    }
+  
+    .container4-1 {
+      display: block;
+      width: 100%;
+      justify-content: normal;
+    }
+  
+    .soon p {
+      font-size: 5vw;
+    }
+  
+}
+
