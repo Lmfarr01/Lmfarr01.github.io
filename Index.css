@@ -1,0 +1,160 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #FDFAEC;
+}
+
+/* Hero Space? */
+
+section.first h1 {
+	margin: 0;
+	padding: 30px;
+	text-align: center;
+	font-size: 92px;
+	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+}
+
+section.first-2 h1 {
+	margin: 0;
+	padding: 30px;
+	text-align: center;
+	font-size: 42px;
+	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	max-width: 2400px;
+}
+
+.cards-3 {
+	width: 90vw;
+	margin: 0 auto;
+	display: flex;
+}
+
+.cards-2 {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.cards {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.card-3 {
+	margin: 0 auto;
+	width: 100%;
+	box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+}
+
+.card-2 {
+	margin: 0 auto;
+	width: 90vw;
+	box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+}
+
+.card {
+	width: 30vw;
+	box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+}
+
+.card:nth-child(1) {
+	height:500px;
+	outline: 150px dotted #FECDBC;
+	outline-offset: -200px;
+}
+
+.card:nth-child(2) {
+	height:600px;
+	outline: 150px solid #FECDBC;
+	outline-offset: -200px;
+}
+
+.card:nth-child(3) {
+	height:700px;
+	outline: 400px dotted #FECDBC;
+	outline-offset: -500px;
+}
+
+.card:nth-child(4) {
+	height:500px;
+	outline: 150px double #FECDBC;
+	outline-offset: -200px;
+}
+.card:nth-child(5) {
+	height:400px;
+}
+.card:nth-child(6) {
+	height:300px;
+}
+
+.box-1 {
+	position: absolute;
+	top: 0;
+	right: 40px;
+	bottom: 0;
+	left: 40px;
+	display: inline-box;
+	justify-content: left;
+}
+
+.box-1 h1 {
+	font-size: 48px;
+	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.box-1 p {
+	margin: 0;
+	font-size: 36px;
+	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: line-through;
+}
+
+@media screen and (max-width: 1200px) {
+  section.first h1 {
+	margin: 0;
+	padding: 30px;
+	font-size: 64px;
+	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+  }
+
+    .card {
+	width: 45vw;
+	outline: 1px solid #000;
+}
+
+}
+
+@media screen and (max-width: 800px) {
+  section.first h1 {
+	margin: 0;
+	padding: 30px;
+	font-size: 64px;
+	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+  }
+
+  .cards-3 {
+  	width: 85vw;
+  	flex-wrap: wrap;
+  }
+
+    .card-2 {
+  	width: 85vw;
+  }
+
+  .card {
+	width: 85vw;
+	outline: 1px solid #000;
+}
+
+}
