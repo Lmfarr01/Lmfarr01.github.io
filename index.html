@@ -1,69 +1,194 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>
+            Independent Site Test
+        </title>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+            <link href="index.css" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+                        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700" rel="stylesheet">
+                            <script src="https://npmcdn.com/minigrid@3.0.1/dist/minigrid.min.js">
+                            </script>
+                            <script src="js/jelly.min.js">
+                            </script>
+                            <script src="js/promise.min.js">
+                            </script>
+                            <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js">
+                            </script>
+                            <script src="jquery-3.4.1.min.js">
+                            </script>
+                        </link>
+                    </link>
+                </link>
+            </link>
+        </meta>
+    </head>
+    <body>
+        <header>
+        </header>
+        <div class="wrapper">
+            <svg height="400" style="display: none" version="1.1" width="400" xmlns="http://www.w3.org/2000/svg">
+                <path d="M106.5,125c-22.54,48.37-61,69-41,149,14,56,105.05,69.08,179,59,66-9,89-47,95-111,6.8-72.48-22.69-127.92-69-143C227.5,65,147.5,37,106.5,125Z" id="blob-path">
+                </path>
+            </svg>
+            <section class="first">
+                <div class="cards">
+                    <div class="card">
+                        <h1>
+                            Lindsay and Ian are having a baby!
+                        </h1>
+                        <div class="jelly-container">
+                            <!-- Canvas to draw the jelly pentagon -->
+                            <canvas class="jelly-canvas">
+                            </canvas>
+                            <!-- Text in the centroid of the jelly pentagon -->
+                            <div class="centroid-container">
+                                <div class="centroid-text">
+                                    S
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="first-2">
+                <div class="cards">
+                    <div class="cards-extra-3">
+                    	<div class="card" href="">
+                        <h1>
+                            Gender — ¯\_(ツ)_/¯
+                        </h1>
+                    	</div>
+                    	<div class="card">
+                        <h1>
+                            Due Date — 10 / 29 / 2019
+                        </h1>
+                    	</div>
+                	</div>
 
-<head>
-<title>Independent Site Test</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/index.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700" rel="stylesheet">
-
-<script src="https://npmcdn.com/minigrid@3.0.1/dist/minigrid.min.js"></script>
-<script src="grid.js"></script>
-
-</head>
-
-<body>
-
-  <header>
-  </header>
-
-<div class="wrapper">
-  <section class="first">
-  	<div class="cards-2">
-	  <div class="card-2">
-		<h1>Lindsay and Ian are having a baby!</h1>
-	  </div>
-    </div>
-  </section>
-  <section class="first-2">
-  	<div class="cards-3">
-	  <div class="card-3" href="">
-		<h1>Gender — ¯\_(ツ)_/¯</h1>
-	  </div>
-	  <div class="card-3" href="">
-		<h1>Due Date — 10 / 29 / 2019</h1>
-	  </div>
-    </div>
-  </section>
-  <section class="second">
-	  <div class="cards">
-	  	<div class="card">
-	  		<div class="box-1">
-				<h1>Our latest baby name ideas!</h1>
-				<p>Moss<br>Butterscotch<br>Gandalf<br>Pikachu<br>Zanzabar</p>
-			</div>
-	    </div>
-	    <div class="card">
-	    	<h1>Guess the weight!</h1>
-	    </div>
-	    <div class="card">
-	    	<h1>Meet Daisy</h1>
-	    </div>
-	    <div class="card">
-	    	<h1>Lorem Ipsum</h1>
-	    </div>
-	    <div class="card">
-	    	<h1>Lorem Ipsum</h1>
-	    </div>
-	    <div class="card">
-	    	<h1>Lorem Ipsum</h1>
-	    </div>
-	  </div>
-  </section>
-</div>
-
-</body>
-
+                </div>
+            </section>
+            <section class="second">
+                <div class="cards">
+                	<div class="cards-extra-1">
+                    <div class="card">
+                        <h1>
+                            Top Baby Names
+                        </h1>
+                        <p class="names">
+                            Marzipan
+                            <br>
+                                Reptar
+                                <br>
+                                    Moss
+                                    <br>
+                                        Pikachu
+                                        <br>
+                                            Arabesque
+                                        </br>
+                                    </br>
+                                </br>
+                            </br>
+                        </p>
+                        <p class="latest-name">
+                            Pickles
+                        </p>
+                    </div>
+                    <div class="card poll">
+                        <form action="https://poll.pollcode.com/42218761" method="post">
+                            <div style="margin: 0;font-family:'Montserrat', sans-serif;color:#000000;">
+                                <div>
+                                    <h1>
+                                        Guess The Length
+                                    </h1>
+                                </div>
+                                <input class="form-radio" id="answer422187611" name="answer" type="radio" value="1"/>
+                                <label for="answer422187611" style="float:left;margin: 0">
+                                    18 Inches
+                                </label>
+                                <div style="clear:both;">
+                                </div>
+                                <input class="form-radio" id="answer422187612" name="answer" style="float:left;" type="radio" value="2"/>
+                                <label for="answer422187612" style="float:left;width:232px;">
+                                    19 Inches
+                                </label>
+                                <div style="clear:both;">
+                                </div>
+                                <input class="form-radio" id="answer422187613" name="answer" style="float:left;" type="radio" value="3"/>
+                                <label for="answer422187613" style="float:left;width:232px;">
+                                    20 Inches
+                                </label>
+                                <div style="clear:both;">
+                                </div>
+                                <input class="form-radio" id="answer422187614" name="answer" style="float:left;" type="radio" value="4"/>
+                                <label for="answer422187614" style="float:left;width:232px;">
+                                    21 Inches
+                                </label>
+                                <div style="clear:both;">
+                                </div>
+                                <input class="form-radio" id="answer422187615" name="answer" style="float:left;" type="radio" value="4"/>
+                                <label for="answer422187615" style="float:left;width:232px;">
+                                    22 Inches (!)
+                                </label>
+                                <div style="clear:both;">
+                                </div>
+                                <div align="left" style="padding:30px;">
+                                    <input class="vote" type="submit" value=" Vote ">
+                                    </input>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                	</div>
+                	<div class="cards-extra-2">
+                	<div class="card daisy">
+                    	<h1>
+                        Meet Daisy the Nurse
+                    	</h1>
+                    	<canvas class="zdog-canvas" height="500" width="650">
+                    	</canvas>
+                	</div>
+            		</div>
+            	</div>
+            	<div  class="cards">
+            </section>
+        </div>
+    </body>
 </html>
+<section class="third">
+    <div class="cards">
+        <div class="card">
+            <h1>
+                Baby Vision (04/17)
+            </h1>
+            <div class="ultrasound">
+                <img src="https://payload.cargocollective.com/1/6/208850/10629084/Ultrasound_04-17.png">
+                </img>
+            </div>
+        </div>
+        <div class="card poll">
+            <h1>
+                Registry Is In The Works!
+            </h1>
+        </div>
+    </div>
+</section>
+<script src="js/scripts.js">
+</script>
+<script src="js/zdog-demo.js">
+</script>
+<script>
+	$(".vote").click(function(event){
+  event.preventDefault();
+       $.ajax({
+        url: $(this).attr('action'),
+        type: $(this).attr('method'),
+        data: $(this).serialize(),
+        success: function(html) {
+        alert('ok');
+        }
+    });
+});
+</script>
