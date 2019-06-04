@@ -3,20 +3,68 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	background-color: #FDFAEC;
+	overflow: scroll;
 }
 
-/* Hero Space? */
+body::-webkit-scrollbar { 
+    display: none; 
+} 
 
-section.first h1 {
+.wrapper {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	max-width: 2400px;
+}
+
+/* Hero */
+
+.cards {
+	width: 90vw;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cards-extra-3 {
+	width: 90vw;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.cards-extra-1 {
+	width: 60vw;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.cards-extra-2 {
+	width: 30vw;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card {
+	margin: 0 auto;
+	width: 100%;
+	box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #999;
+}
+
+.first h1 {
+	position: relative;
 	margin: 0;
-	padding: 30px;
+	padding: 50px 30px 80px 30px;
 	text-align: center;
 	font-size: 92px;
 	font-weight: 300;
 	font-family: 'Montserrat', sans-serif;
+	z-index: 10;
+	pointer-events: none;
 }
 
-section.first-2 h1 {
+.first-2 h1 {
 	margin: 0;
 	padding: 30px;
 	text-align: center;
@@ -25,116 +73,216 @@ section.first-2 h1 {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.wrapper {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	max-width: 2400px;
+/* Jelly Test */
+
+.jelly {
+	position: relative;
 }
 
-.cards-3 {
-	width: 90vw;
-	margin: 0 auto;
-	display: flex;
+.jelly-container {
+  position: absolute;
+  display: inline-block;
+  margin: 0 auto;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.cards-2 {
+.jelly-container, .jelly-canvas {
+  width: 400px;
+  height: 400px;
+}
+
+.centroid-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.centroid-text {
+  font-size: 100px;
+  color: #FECDBC;
+}
+
+.zdog-canvas {
 	width: 100%;
 	margin: 0 auto;
+	cursor: move;
 }
 
-.cards {
-	width: 100%;
-	margin: 0 auto;
-}
+/* Secondary Content */
 
-.card-3 {
-	margin: 0 auto;
-	width: 100%;
-	box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
-}
-
-.card-2 {
-	margin: 0 auto;
-	width: 90vw;
-	box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
-}
-
-.card {
-	width: 30vw;
-	box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
-}
-
-.card:nth-child(1) {
-	height:500px;
-	outline: 150px dotted #FECDBC;
-	outline-offset: -200px;
-}
-
-.card:nth-child(2) {
-	height:600px;
-	outline: 150px solid #FECDBC;
-	outline-offset: -200px;
-}
-
-.card:nth-child(3) {
-	height:700px;
-	outline: 400px dotted #FECDBC;
-	outline-offset: -500px;
-}
-
-.card:nth-child(4) {
-	height:500px;
-	outline: 150px double #FECDBC;
-	outline-offset: -200px;
-}
-.card:nth-child(5) {
-	height:400px;
-}
-.card:nth-child(6) {
-	height:300px;
-}
-
-.box-1 {
-	position: absolute;
-	top: 0;
-	right: 40px;
-	bottom: 0;
-	left: 40px;
-	display: inline-box;
-	justify-content: left;
-}
-
-.box-1 h1 {
-	font-size: 48px;
-	font-weight: 300;
-	font-family: 'Montserrat', sans-serif;
-}
-
-.box-1 p {
+.second h1 {
 	margin: 0;
-	font-size: 36px;
+	padding: 30px;
+	font-size: 42px;
 	font-weight: 300;
 	font-family: 'Montserrat', sans-serif;
-	text-decoration: line-through;
 }
+
+.second p {
+	margin: 0;
+	font-size: 32px;
+	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+}
+
+p.names {
+	text-decoration: line-through;
+	padding: 0 30px 10px 30px;
+	line-height: 1.5;
+}
+
+p.latest-name {
+	padding: 0 30px 30px 30px;
+	color: #777;
+}
+
+.form-radio {
+     float: left;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #FECDBC;
+     color: #777;
+     top: 8px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;     
+     margin: 0 15px 0 30px;
+     outline: none;
+}
+
+.form-radio:checked::before {
+     position: absolute;
+     font: 13px/1 'Montserrat', sans-serif;
+     left: 11px;
+     top: 7px;
+     content: '\02143';
+     color: #000;
+     transform: rotate(40deg);
+}
+
+.form-radio:hover {
+     background-color: #FEA98C;
+}
+
+.form-radio:checked {
+     background-color: #FECDBC;
+}
+
+.vote {
+     float: left;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     color: #777;
+     background-color: #FDFAEC;
+     height: 50px;
+     width: 100px;
+     border: solid 2px #777;
+     border-radius: 5px;
+     cursor: pointer;     
+     margin-bottom: 30px;
+     outline: none;
+     font-size: 24px;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.vote:hover {
+	color: #ffffff;
+	background-color: #777;
+}
+
+.second label {
+	float: left;
+	margin: 0;
+	padding-bottom: 10px;
+	font-size: 32px;
+	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.second .daisy h1 {
+	padding: 30px 30px 15px 30px;
+}
+
+.third h1 {
+	margin: 0;
+	padding: 30px;
+	font-size: 42px;
+	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.third img {
+	width: 100%;
+	filter: opacity(40%);
+	transition: 0.3s
+}
+
+.third img:hover {
+	filter: opacity(80%);
+	transition: 0.5s
+}
+
+.third .ultrasound {
+	padding: 0 100px 30px 100px;
+}
+
+/* Responsive */
 
 @media screen and (max-width: 1200px) {
+  
   section.first h1 {
 	margin: 0;
 	padding: 30px;
 	font-size: 64px;
 	font-weight: 300;
 	font-family: 'Montserrat', sans-serif;
-  }
+   }
 
-    .card {
-	width: 45vw;
-	outline: 1px solid #000;
-}
+    .cards-extra-3 {
+  	width: 90vw;
+  	flex-wrap: wrap;
+   }
+
+   .cards-extra-1 {
+   	width: 90vw;
+   }
+
+    .cards-extra-2 {
+   	width: 90vw;
+   }
 
 }
 
 @media screen and (max-width: 800px) {
+  
+  .cards {
+  	width: 85vw;
+  	flex-wrap: wrap;
+  }
+
+      .cards-extra-3 {
+  	width: 85vw;
+  	flex-wrap: wrap;
+  }
+
+    .cards-extra-1 {
+  	width: 85vw;
+  	flex-wrap: wrap;
+  }
+
   section.first h1 {
 	margin: 0;
 	padding: 30px;
@@ -143,18 +291,8 @@ section.first-2 h1 {
 	font-family: 'Montserrat', sans-serif;
   }
 
-  .cards-3 {
-  	width: 85vw;
-  	flex-wrap: wrap;
+  .jelly-container, .jelly-canvas {
+ 	width: 320px;
+	height: 320px;
   }
-
-    .card-2 {
-  	width: 85vw;
-  }
-
-  .card {
-	width: 85vw;
-	outline: 1px solid #000;
-}
-
 }
