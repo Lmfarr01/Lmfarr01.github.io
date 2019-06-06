@@ -55,11 +55,12 @@ body::-webkit-scrollbar {
 .first h1 {
 	position: relative;
 	margin: 0;
-	padding: 50px 30px 80px 30px;
+	padding: 50px 30px 60px 30px;
+	color: #231f20;
 	text-align: center;
-	font-size: 92px;
+	font-size: 100px;
 	font-weight: 300;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Playfair Display', serif;
 	z-index: 10;
 	pointer-events: none;
 }
@@ -83,7 +84,7 @@ body::-webkit-scrollbar {
   position: absolute;
   display: inline-block;
   margin: 0 auto;
-  top: 20px;
+  top: 30px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -108,7 +109,8 @@ body::-webkit-scrollbar {
 }
 
 .zdog-canvas {
-	width: 100%;
+	width: 100% !important;
+	height: auto !important;
 	margin: 0 auto;
 	cursor: move;
 }
@@ -219,36 +221,30 @@ p.latest-name {
 .third h1 {
 	margin: 0;
 	padding: 30px;
-	font-size: 42px;
+	color: #231f20;
+	font-size: 52px;
+	font-weight: 300;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+}
+
+.third p {
+	margin: 0;
+	padding: 0 30px 50px 30px;
+	font-size: 32px;
 	font-weight: 300;
 	font-family: 'Montserrat', sans-serif;
-}
-
-.third img {
-	width: 100%;
-	filter: opacity(40%);
-	transition: 0.3s
-}
-
-.third img:hover {
-	filter: opacity(80%);
-	transition: 0.5s
-}
-
-.third .ultrasound {
-	padding: 0 100px 30px 100px;
+	line-height: 1.5;
+	text-align: center;
 }
 
 /* Responsive */
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1775px) {
   
-  section.first h1 {
-	margin: 0;
-	padding: 30px;
-	font-size: 64px;
-	font-weight: 300;
-	font-family: 'Montserrat', sans-serif;
+  .first h1 {
+	padding: 50px 50px 60px 50px;
+	font-size: 130px;
    }
 
     .cards-extra-3 {
@@ -263,6 +259,36 @@ p.latest-name {
     .cards-extra-2 {
    	width: 90vw;
    }
+
+   .jelly-container {
+   top: 85px;
+}
+
+}
+
+@media screen and (max-width: 1200px) {
+  
+  .first h1 {
+	padding: 50px 30px 60px 30px;
+	font-size: 86px;
+   }
+
+    .cards-extra-3 {
+  	width: 90vw;
+  	flex-wrap: wrap;
+   }
+
+   .cards-extra-1 {
+   	width: 90vw;
+   }
+
+    .cards-extra-2 {
+   	width: 90vw;
+   }
+
+      .jelly-container {
+   top: 15px;
+}
 
 }
 
@@ -283,16 +309,22 @@ p.latest-name {
   	flex-wrap: wrap;
   }
 
-  section.first h1 {
-	margin: 0;
-	padding: 30px;
-	font-size: 64px;
-	font-weight: 300;
-	font-family: 'Montserrat', sans-serif;
+  .first h1 {
+	padding: 50px 30px 60px 30px;
+	font-size: 54px;
   }
 
-  .jelly-container, .jelly-canvas {
- 	width: 320px;
-	height: 320px;
-  }
+   .jelly-container {
+    top: 50px;
+}
+
+.jelly-container, .jelly-canvas {
+  width: 320px;
+  height: 320px;
+}
+
+#jelly-svg {
+	margin: 0 auto;
+}
+
 }
