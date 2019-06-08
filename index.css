@@ -16,8 +16,6 @@ body::-webkit-scrollbar {
 	max-width: 2400px;
 }
 
-/* Hero */
-
 .cards {
 	width: 90vw;
 	margin: 0 auto;
@@ -52,6 +50,9 @@ body::-webkit-scrollbar {
 	box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #999;
 }
 
+
+/* Hero */
+
 .first h1 {
 	position: relative;
 	margin: 0;
@@ -65,34 +66,23 @@ body::-webkit-scrollbar {
 	pointer-events: none;
 }
 
-.first-2 h1 {
-	margin: 0;
-	padding: 30px;
-	text-align: center;
-	font-size: 42px;
-	font-weight: 300;
-	font-family: 'Montserrat', sans-serif;
-}
-
-/* Jelly Test */
-
 .jelly {
-	position: relative;
+  position: relative;
 }
 
 .jelly-container {
   position: absolute;
   display: inline-block;
   margin: 0 auto;
-  top: 30px;
+  top: 80px;
   right: 0;
   bottom: 0;
   left: 0;
 }
 
 .jelly-container, .jelly-canvas {
-  width: 400px;
-  height: 400px;
+  width: 320px;
+  height: 320px;
 }
 
 .centroid-container {
@@ -108,40 +98,62 @@ body::-webkit-scrollbar {
   color: #FECDBC;
 }
 
-.zdog-canvas {
-	width: 100% !important;
-	height: auto !important;
-	margin: 0 auto;
-	cursor: move;
-}
 
-/* Secondary Content */
+/* Hero 2 */
 
-.second h1 {
+.first-2 h1 {
 	margin: 0;
 	padding: 30px;
+	text-align: center;
 	font-size: 42px;
 	font-weight: 300;
 	font-family: 'Montserrat', sans-serif;
 }
 
-.second p {
-	margin: 0;
-	font-size: 32px;
-	font-weight: 300;
-	font-family: 'Montserrat', sans-serif;
+.em-svg {
+  height: 1.2em !important;
+  width: 1.2em !important;
+  margin-left: 20px;
+  filter: blur(20px) saturate(70%) brightness(105%);
 }
 
+.em-svg:hover {
+  filter: blur(0) saturate(70%) brightness(105%);
+}
+
+
+/* Content */
+
+.second h1 {
+  margin: 0;
+  padding: 30px;
+  font-size: 42px;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.second p {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Baby Names */
+
 p.names {
-	text-decoration: line-through;
-	padding: 0 30px 10px 30px;
-	line-height: 1.5;
+  text-decoration: line-through;
+  padding: 0 30px 10px 30px;
+  line-height: 1.5;
 }
 
 p.latest-name {
-	padding: 0 30px 30px 30px;
-	color: #777;
+  padding: 0 30px 30px 30px;
+  color: #777;
 }
+
+/* Poll */
 
 .form-radio {
      float: left;
@@ -152,7 +164,7 @@ p.latest-name {
      position: relative;
      background-color: #FECDBC;
      color: #777;
-     top: 8px;
+     top: 5px;
      height: 30px;
      width: 30px;
      border: 0;
@@ -201,21 +213,87 @@ p.latest-name {
 }
 
 .vote:hover {
-	color: #ffffff;
-	background-color: #777;
+  color: #ffffff;
+  background-color: #777;
 }
 
 .second label {
+  float: left;
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 32px;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Daisy */
+
+.card.daisy {
+  position: relative;
+}
+
+.text-top {
+  position: absolute;
+  padding: 50px;
+}
+
+path {
+  fill: transparent;
+}
+
+text {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
+
+svg.top {
+  position: absolute;
+  top: 20px;
+}
+
+svg.bottom {
+  position: absolute;
+  bottom: 20px;
+}
+
+.daisy-wrap {
+  position: absolute;
+}
+
+.daisy-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+}
+
+.zdog-canvas {
+	position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+	width: 100% !important;
+	height: auto !important;
+	margin: auto;
+	cursor: move;
 	float: left;
-	margin: 0;
-	padding-bottom: 10px;
-	font-size: 32px;
-	font-weight: 300;
-	font-family: 'Montserrat', sans-serif;
 }
 
 .second .daisy h1 {
-	padding: 30px 30px 15px 30px;
+	padding: 30px 30px 0 30px;
+	font-size: 42px;
+  text-align: center;
+}
+
+h1.instructions {
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  text-transform: lowercase !important;
 }
 
 .third h1 {
@@ -230,41 +308,134 @@ p.latest-name {
 
 .third p {
 	margin: 0;
-	padding: 0 30px 50px 30px;
-	font-size: 32px;
+	padding: 0 120px 50px 120px;
+	font-size: 26px;
 	font-weight: 300;
 	font-family: 'Montserrat', sans-serif;
-	line-height: 1.5;
+	line-height: 1.7;
+	letter-spacing: 0.2px;
 	text-align: center;
 }
 
+
 /* Responsive */
+
+@media screen and (min-width: 1408px) {
+  
+   .daisy-2 {
+    margin: 0 40px;
+   }
+
+}
+
+@media screen and (min-width: 1488px) {
+  
+   .daisy-2 {
+    margin: 0 70px;
+   }
+
+   svg.top {
+    top: 10px;
+   }
+
+   svg.bottom {
+    bottom: 10px;
+   }
+
+}
+
+@media screen and (min-width: 1600px) {
+  
+   .daisy-2 {
+    margin: 0 100px;
+   }
+
+}
 
 @media screen and (min-width: 1775px) {
   
   .first h1 {
-	padding: 50px 50px 60px 50px;
-	font-size: 130px;
+  padding: 50px 50px 60px 50px;
+  font-size: 130px;
    }
 
     .cards-extra-3 {
-  	width: 90vw;
-  	flex-wrap: wrap;
+    width: 90vw;
+    flex-wrap: nowrap;
    }
 
    .cards-extra-1 {
-   	width: 90vw;
+    width: 60vw;
    }
 
     .cards-extra-2 {
-   	width: 90vw;
+    width: 30vw;
    }
 
    .jelly-container {
-   top: 85px;
-}
+   top: 120px;
+   }
+
+   .third p {
+  padding: 0 200px 50px 200px;
+   }
 
 }
+
+@media screen and (min-width: 1800px) {
+  
+   .daisy-2 {
+    margin: 0 120px;
+   }
+
+    svg.top {
+    top: 0;
+    transform: rotate(9deg);
+    transform-origin: 50% 50%;
+   }
+
+    svg.bottom {
+    bottom: 0;
+    transform: rotate(6deg);
+    transform-origin: 50% 50%;
+   }
+
+   text {
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+   }
+
+}
+
+@media screen and (min-width: 2000px) {
+  
+   .daisy-2 {
+    margin: 0 150px;
+   }
+
+    svg.top {
+    top: -20px;
+   }
+
+    svg.bottom {
+    bottom: -20px;
+   }
+
+}
+
+@media screen and (min-width: 2300px) {
+  
+   .daisy-2 {
+    margin: 0 200px;
+   }
+
+   .first h1 {
+    padding: 50px 400px 60px 400px;
+   }
+
+}
+
 
 @media screen and (max-width: 1200px) {
   
@@ -287,44 +458,143 @@ p.latest-name {
    }
 
       .jelly-container {
-   top: 15px;
-}
+   top: 60px;
+   }
+
+   .third p {
+   	font-size: 30px;
+   }
+
+   .daisy-2 {
+    margin: 0 150px;
+   }
+
+   svg.top {
+    position: relative;
+    padding-top: 50px;
+   }
+
+    svg.bottom {
+    bottom: 80px;
+   }
+
+  .em-svg {
+    filter: blur(0) saturate(70%) brightness(105%);
+  }
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   
   .cards {
   	width: 85vw;
   	flex-wrap: wrap;
   }
 
-      .cards-extra-3 {
+  .cards-extra-3 {
   	width: 85vw;
   	flex-wrap: wrap;
   }
 
-    .cards-extra-1 {
+  .cards-extra-1 {
   	width: 85vw;
   	flex-wrap: wrap;
   }
 
   .first h1 {
-	padding: 50px 30px 60px 30px;
-	font-size: 54px;
+	  padding: 50px 30px 60px 30px;
+	  font-size: 62px;
   }
 
+  .jelly-container {
+    top: 30px;
+  }
+
+  .third p {
+   	font-size: 30px;
+  }
+
+  .daisy-2 {
+    margin: 0 60px;
+  }
+
+  svg.top {
+    position: relative;
+    padding-top: 10px;
+  }
+
+  svg.bottom {
+    bottom: 30px;
+  }
+
+  .em-svg {
+    filter: blur(0) saturate(70%) brightness(105%);
+  }
+
+@media screen and (max-width: 425px) {
+
+  .first h1 {
+	font-size: 42px;
+  padding: 50px 50px 60px 50px;
+   }
+
+   .first-2 h1 {
+	font-size: 24px;
+	font-weight: 400;
+   }
+
+   .second h1 {
+   	font-size: 30px;
+   }
+
+   .second p {
+   	font-size: 24px;
+   }
+
+   .second label {
+   	font-size: 24px;
+   }
+
+   .form-radio:checked::before {
+     top: 0;
+   }
+
+   .form-radio {
+     top: 0;
+   }
+
+   .third h1 {
+   	font-size: 36px;
+   }
+
+   .third p {
+   	font-size: 20px;
+   	padding: 0px 20px 40px 20px;
+   }
+
    .jelly-container {
-    top: 50px;
-}
+    top: 60px;
+   }
 
-.jelly-container, .jelly-canvas {
-  width: 320px;
-  height: 320px;
-}
+  .daisy-2 {
+    margin: 0 30px;
+  }
 
-#jelly-svg {
-	margin: 0 auto;
-}
+  text {
+  font-size: 18px;
+  }
+
+   svg.top {
+    position: relative;
+    margin-top: -15px;
+    transform: rotate(-7deg);
+    transform-origin: 50% 50%;
+   }
+
+    svg.bottom {
+    bottom: 10px;
+    transform: rotate(-2deg);
+    transform-origin: 50% 50%;
+   }  
 
 }
