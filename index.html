@@ -4,12 +4,15 @@
         <title>
             Independent Site Test
         </title>
+        <meta charset="UTF-8">
+        
         <meta content="width=device-width, initial-scale=1" name="viewport">
             <link href="index.css" rel="stylesheet">
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+            <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
             
             <script src="js/jelly.min.js"></script>
             <script src="js/promise.min.js"></script>
@@ -49,13 +52,15 @@
                 <div class="cards">
                     <div class="cards-extra-3">
                     	<div class="card" href="">
-                        <h1>
-                            Gender — ¯\_(ツ)_/¯
+                        <h1 class="gender">
+                            Gender —
+                            <i class="em-svg em-boy"></i>
                         </h1>
+
                     	</div>
                     	<div class="card">
                         <h1>
-                            Due Date — 10 / 29 / 2019
+                            10 / 29 / 2019
                         </h1>
                     	</div>
                 	</div>
@@ -70,7 +75,7 @@
                             Top Baby Names!
                         </h1>
                         <p class="names">
-                            Marzipan<br>Reptar<br>Moss<br>Pikachu<br>Arabesque
+                            Marzipan<br>Reptar<br>Moss<br>Pikachu<br>Kombucha
                         </p>
                         <p class="latest-name">
                             Pickles
@@ -86,25 +91,25 @@
                                     </h1>
                                 </div>
                                 <input class="form-radio" id="answer738691921" name="answer" type="radio" value="1"/>
-                                <label for="answer738691921" style="float:left;margin: 0">
+                                <label class="answer-1" for="answer738691921" style="float:left;margin: 0;">
                                     19 Inches
                                 </label>
                                 <div style="clear:both;">
                                 </div>
                                 <input class="form-radio" id="answer738691922" name="answer" style="float:left;" type="radio" value="2"/>
-                                <label for="answer738691922" style="float:left;width:232px;">
+                                <label for="answer738691922" style="float:left;margin: 0;">
                                     20 Inches
                                 </label>
                                 <div style="clear:both;">
                                 </div>
                                 <input class="form-radio" id="answer738691923" name="answer" style="float:left;" type="radio" value="3"/>
-                                <label for="answer738691923" style="float:left;width:232px;">
+                                <label for="answer738691923" style="float:left;margin: 0;">
                                     21 Inches
                                 </label>
                                 <div style="clear:both;">
                                 </div>
                                 <input class="form-radio" id="answer738691924" name="answer" style="float:left;" type="radio" value="4"/>
-                                <label for="answer738691924" style="float:left;width:232px;">
+                                <label for="answer738691924" style="float:left;margin: 0;">
                                     22 Inches
                                 </label>
                                 <div style="clear:both;">
@@ -119,11 +124,26 @@
                 	</div>
                 	<div class="cards-extra-2">
                 		<div class="card daisy">
-                    		<h1>
-                        	Meet Daisy the Nurse!
-                    		</h1>
-                    		<canvas class="zdog-canvas" height="500" width="650">
-                    		</canvas>
+                            <svg class="top" viewBox="0 0 200 200">
+                                    <path id="curve-1" transform="rotate(233 100 100)" d="M175,100a75,75,0,1,1-75-75A75,75,0,0,1,175,100Z"/>
+                                    <text width="200">
+                                        <textPath xlink:href="#curve-1">
+                                            Nurse Daisy
+                                        </textPath>
+                                    </text>
+                            </svg>
+                            <svg class="bottom" viewBox="0 0 200 200">
+                                    <path id="curve-2" transform="rotate(62 100 100)" d="M175,100a75,75,0,1,1-75-75A75,75,0,0,1,175,100Z"/>
+                                    <text width="200">
+                                        <textPath xlink:href="#curve-2">
+                                            Move Me
+                                        </textPath>
+                                    </text>
+                            </svg>
+                            <div class="daisy-2">
+                    		  <canvas class="zdog-canvas" height="500" width="650">
+                    		  </canvas>
+                            </div>
                 		</div>
             		</div>
             	</div>
