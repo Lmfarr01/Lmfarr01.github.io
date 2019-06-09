@@ -2,10 +2,10 @@
 <html>
     <head>
         <title>
-            Lindsay & Ian's 👶 !!!
+            Independent Site Test
         </title>
         <meta charset="UTF-8">
-        
+
         <meta content="width=device-width, initial-scale=1" name="viewport">
             <link href="index.css" rel="stylesheet">
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,6 +17,7 @@
             <script src="js/jelly.min.js"></script>
             <script src="js/promise.min.js"></script>
             <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+            <script src="js/button.js"></script>
         </meta>
     </head>
 
@@ -51,17 +52,16 @@
             <section class="first-2">
                 <div class="cards">
                     <div class="cards-extra-3">
-                    	<div class="card" href="">
+                    	<div class="card">
                         <h1 class="gender">
                             Gender —
                             <i class="em-svg em-boy"></i>
                         </h1>
-
                     	</div>
-                    	<div class="card">
-                        <h1>
-                            10 / 29 / 2019
-                        </h1>
+                    	<div class="card halloween">
+                            <h1 class="halloween-2">
+                                <span>10 / 29 / 2019</span>
+                            </h1>
                     	</div>
                 	</div>
 
@@ -115,7 +115,10 @@
                                 <div style="clear:both;">
                                 </div>
                                 <div align="left" style="padding:30px;">
-                                    <input class="vote" type="submit" value=" Vote ">
+                                    <input class="vote vote1" onclick="displaySong1()" type="submit" value=" Vote ">
+                                    <div id="success">
+                                        You voted! 👍
+                                    </div>
                                     </input>
                                 </div>
                             </div>
