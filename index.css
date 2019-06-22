@@ -188,8 +188,9 @@ h1.halloween-2:hover:after {
 
 p.names {
   text-decoration: line-through;
+  margin-top: -2px;
   padding: 0 30px 10px 30px;
-  line-height: 1.4;
+  line-height: 1.5;
   color: #777777;
 }
 
