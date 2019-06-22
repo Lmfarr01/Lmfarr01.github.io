@@ -351,7 +351,7 @@ h1.instructions {
 
 .third h1 {
 	margin: 0;
-	padding: 50px 30px 30px;
+	padding: 60px 30px 30px;
 	color: #231f20;
 	font-size: 52px;
 	font-weight: 300;
@@ -371,7 +371,7 @@ h1.instructions {
 }
 
 .go-container {
-	padding: 0 0 60px;
+	padding: 0 0 70px;
 	text-align: center;
 }
 
