@@ -372,26 +372,26 @@ h1.instructions {
 
 .go-container {
 	padding: 0 0 50px;
+	text-align: center;
 }
 
 a {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	display: block;
+	display: inline-block;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 10px 20px;
 	position: relative;
 	color: #777;
 	background-color: #FDFAEC;
-	height: 50px;
-	width: 185px;
 	border: solid 2px #777;
 	border-radius: 5px;
 	cursor: pointer;
 	outline: none;
 	font-size: 24px;
 	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
 }
 
 a:hover {
