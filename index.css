@@ -359,13 +359,17 @@ h1.instructions {
 
 .third p {
 	margin: 0;
-	padding: 0 120px 50px 120px;
+	padding: 0 120px 30px 120px;
 	font-size: 26px;
 	font-weight: 300;
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.7;
 	letter-spacing: 0.2px;
 	text-align: center;
+}
+
+.go-container {
+	padding: 0 0 50px;
 }
 
 .go {
